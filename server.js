@@ -8,6 +8,11 @@ const PORT=process.env.PORT || 3000
 connectDb()
 
 app.use(express.json())
+
+app.get("/", (req, res) => {
+  res.send("API is running ");
+});
+
 app.use(cors({
     origin: "*"
 }));
