@@ -14,7 +14,8 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors({
-    origin: "*"
+     origin: "https://frontend-foodrecipe.vercel.app",
+     credentials: true
 }));
 
 app.use(express.static("public"))
